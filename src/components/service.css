@@ -1,0 +1,157 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 100px 20px 100px;
+}
+
+.service-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 400px;
+}
+
+.service-left > h1 {
+  margin-top: 0;
+  font-size: 60px;
+  color: #fff;
+}
+
+.service-left > h1 > span {
+  margin-left: 30px;
+  color: chartreuse;
+}
+
+.service-right {
+  width: 600px;
+}
+
+.service-right > p {
+  text-align: left;
+  color: #d6d6d6;
+  line-height: 25px;
+}
+
+.service-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 15px;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Adjusted */
+  width: 315px;
+  height: 350px;
+  border-radius: 10px;
+  border: 2px solid #00bf63;
+  cursor: pointer;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.service-box:hover {
+  background-color: #00bf63;
+}
+
+.service-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-name > span {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.service-name > h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-name > p {
+  color: #d6d6d6;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .service {
+    margin: 40px 20px;
+  }
+
+  .service-title {
+    flex-direction: column;
+    align-items: flex-start; /* Align title to the left side on mobile devices */
+  }
+
+  .service-left {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .service-left > h1 {
+    font-size: 40px;
+  }
+
+  .service-right {
+    width: auto;
+    text-align: center;
+  }
+
+  .service-box-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Added spacing between boxes horizontally */
+  }
+
+  .service-box {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 250px;
+  }
+
+  .service-logo {
+    margin-bottom: 5px;
+    transform: translateY(-50%);
+  }
+
+  .service-name {
+    margin-top: -10px;
+  }
+
+  .service-name > span {
+    font-size: 20px;
+  }
+
+  .service-name > h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .service-name > p {
+    line-height: 16px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,40 @@
+.project-cat {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.project-cat > button {
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  border: 2px solid #00bf63;
+  color: #00bf63;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.project-cat > button.active {
+  color: #eee;
+  background-color: #00bf63;
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 768px) {
+  .project-cat {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .project-cat > button {
+    flex: 1;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}
